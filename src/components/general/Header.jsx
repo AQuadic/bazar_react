@@ -46,16 +46,26 @@ const Header = () => {
             </div>
 
             <div
-                className={`absolute left-0 right-0 top-full mt-1 z-10 lg:hidden transition-all duration-300 ease-in-out bg-white shadow-md rounded-md overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-                    }`}
+                className={`fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+                    } lg:hidden`}
             >
-                <div className="flex flex-col space-y-1 px-4 py-2">
-                    <Link to="/dashboard" className="py-2 text-gray-800">Dashboard</Link>
-                    <Link to="/team" className="py-2 text-gray-800">Team</Link>
-                    <Link to="/projects" className="py-2 text-gray-800">Projects</Link>
-                    <Link to="/calendar" className="py-2 text-gray-800">Calendar</Link>
+                <div className="flex flex-col space-y-4 p-6">
+                    <Link to="/providers" className="py-2 text-gray-800" onClick={() => setIsMenuOpen(false)}>Providers</Link>
+                    <Link to="/categories" className="py-2 text-gray-800" onClick={() => setIsMenuOpen(false)}>Categories</Link>
+                    <Link to="/about" className="py-2 text-gray-800" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                    <Link to="/contact" className="py-2 text-gray-800" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                    <Link to="/" className="py-2 text-gray-800" onClick={() => setIsMenuOpen(false)}>Language</Link>
                 </div>
             </div>
+
+            {isMenuOpen && (
+                <div
+                    className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+                    onClick={toggleMenu}
+                />
+            )}
+
+
         </nav>
     );
 };
