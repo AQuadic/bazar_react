@@ -4,7 +4,7 @@ import OurProviders from "@/components/Home/OurProviders"
 
 const Home = () => {
     return (
-        <div>
+        <div className="container">
             <HeroSection />
             <OurCategories />
             <OurProviders />

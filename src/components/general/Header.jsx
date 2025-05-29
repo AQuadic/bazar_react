@@ -10,7 +10,7 @@ const Header = () => {
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
     return (
-        <nav className="relative">
+        <nav className="relative container">
             <div className="flex items-center justify-between px-4 py-2">
                 <img src={navLogo} alt="Logo" />
 
