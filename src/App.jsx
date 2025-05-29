@@ -5,6 +5,7 @@ import Categories from "./pages/Categories";
 import Providers from "./pages/Providers";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import ForgetPassword from "./pages/ForgetPassword";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="providers" element={<Providers />} />
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="forgetPassword" element={<ForgetPassword />} />
         </Route>
 
       </Routes>

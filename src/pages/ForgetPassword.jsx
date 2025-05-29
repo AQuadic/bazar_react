@@ -1,12 +1,13 @@
-import SignUpForm from '@/components/signup/SignUpForm'
+import ForgetPassForm from '@/components/forgetPasseord/ForgetPassForm'
 import signBG from '/images/sign/signBG.png'
-const SignUp = () => {
+
+const ForgetPassword = () => {
     return (
         <section className="container flex flex-wrap items-center lg:justify-between justify-center mt-20">
             <img src={signBG} alt="BG" />
-            <SignUpForm />
+            <ForgetPassForm />
         </section>
     )
 }
 
-export default SignUp
+export default ForgetPassword

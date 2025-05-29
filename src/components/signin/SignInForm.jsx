@@ -39,7 +39,7 @@ const SignInForm = () => {
                         <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-[#101010] bg-[#101010] border-[#101010] rounded-sm focus:ring-0 focus:ring-[#101010]" />
                         <label htmlFor="default-checkbox" className="ms-2 text-base font-medium text-[#101010]">Remember me</label>
                     </div>
-                    <Link to='' className="text-[#101010] text-base underline">Forget Password</Link>
+                    <Link to='/forgetPassword' className="text-[#101010] text-base underline">Forget Password</Link>
                 </div>
 
                 <button className="md:w-[504px] w-full h-14 bg-[#101010] rounded-[8px] text-[#FEFEFE] text-lg font-bold">Sign In</button>
