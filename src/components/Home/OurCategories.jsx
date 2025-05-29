@@ -6,7 +6,7 @@ import Bags from '/images/Home/Bags.png';
 
 const categories = [
     { id: 1, title: 'Skin Care', img: SkinCare },
-    { id: 2, title: 'Makeup', img: Makeup },
+    { id: 2, title: 'Make Up', img: Makeup },
     { id: 3, title: 'Accessories', img: Accessories },
     { id: 4, title: 'Bags', img: Bags },
 ];
@@ -15,7 +15,7 @@ const OurCategories = () => {
     return (
         <section className="mt-20">
             <div className="flex items-center justify-between">
-                <h1 className="text-[#101010] text-[40px] font-semibold">Our Categories</h1>
+                <h1 className="text-[#101010] md:text-[40px] text-2xl font-semibold">Our Categories</h1>
                 <Link to='/' className="text-[#101010] text-2xl font-medium">See All</Link>
             </div>
 
