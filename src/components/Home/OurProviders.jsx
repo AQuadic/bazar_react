@@ -1,13 +1,14 @@
 import { Link } from "react-router"
 import AdsStore from '/images/Home/AdsStore.png'
-import product1 from '/images/Home/product1.png'
-import product2 from '/images/Home/product2.png'
+import Azza from '../../../public/images/Home/Azza.png'
+import Telofill from '../../../public/images/Home/Telofill.png'
+import Mala from '../../../public/images/Home/Mala.png'
 import Heart from "../icons/Home/Heart";
 const categories = [
     { id: 1, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 2, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 3, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 4, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 2, title: 'ADS Store', img: Azza, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 3, title: 'ADS Store', img: Telofill, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 4, title: 'ADS Store', img: Mala, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
 ];
 
 const OurProviders = () => {
@@ -26,15 +27,8 @@ const OurProviders = () => {
                             <Heart />
                         </div>
                         <h2 className="text-[#101010] text-xl font-semibold text-center mt-14">{title}</h2>
-                        <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3">{description}</p>
+                        <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3 leading-[150%]">{description}</p>
                         <div>
-                            <h3 className="text-[#101010] text-xl font-semibold mt-4">Products</h3>
-                            <div className="flex items-center gap-2 mt-3">
-                                <img src={product1} alt="Product" />
-                                <img src={product2} alt="Product" />
-                                <img src={product1} alt="Product" />
-                                <img src={product2} alt="Product" />
-                            </div>
                             <button className="w-[248px] h-14 bg-[#101010] rounded-2xl mt-8 text-[#FEFEFE] text-lg font-bold">Explore Us</button>
                         </div>
                     </div>
