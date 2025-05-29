@@ -9,13 +9,13 @@ import Heart from '@/components/icons/Home/Heart';
 
 const providers = [
     { id: 1, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 2, title: 'ADS Store', img: Azza, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 3, title: 'ADS Store', img: Telofill, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 4, title: 'ADS Store', img: Mala, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 2, title: 'Azza Ice Cream', img: Azza, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 3, title: 'Telofill', img: Telofill, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 4, title: 'Mala', img: Mala, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
     { id: 5, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 6, title: 'ADS Store', img: Azza, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 7, title: 'ADS Store', img: Telofill, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
-    { id: 8, title: 'ADS Store', img: Mala, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 6, title: 'Azza Ice Cream', img: Azza, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 7, title: 'Telofill', img: Telofill, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
+    { id: 8, title: 'Mala', img: Mala, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
 ];
 const Providers = () => {
     const [activePage, setActivePage] = useState(1);
