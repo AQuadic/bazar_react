@@ -6,6 +6,7 @@ import Mala from '/images/Home/Mala.png'
 import LeftArrow from '@/components/icons/categories/LeftArrow';
 import RightArrow from '@/components/icons/categories/RightArrow';
 import Heart from '@/components/icons/Home/Heart';
+import { Link } from 'react-router';
 
 const providers = [
     { id: 1, title: 'ADS Store', img: AdsStore, description: 'Lorem ipsum dolor sit amet consectetur. Sagittis cursus dictum mattis condimentum risus.' },
@@ -25,22 +26,23 @@ const Providers = () => {
     return (
         <section className="container mt-10">
             <h1 className="text-[#101010] md:text-[40px] text-2xl font-semibold">Our Providers</h1>
-
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center sm:justify-between justify-center gap-2 mt-8">
-                {providers.map(({ id, title, img, description }) => (
-                    <div key={id} className="flex flex-col mt-8 relative mx-auto">
-                        <img src={img} alt={title} className="w-[100px] h-[100px] mx-auto" />
-                        <div className="absolute top-24 right-0">
-                            <Heart />
+            <Link to='/store'>
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center sm:justify-between justify-center gap-2 mt-8">
+                    {providers.map(({ id, title, img, description }) => (
+                        <div key={id} className="flex flex-col mt-8 relative mx-auto">
+                            <img src={img} alt={title} className="w-[100px] h-[100px] mx-auto" />
+                            <div className="absolute top-24 right-0">
+                                <Heart />
+                            </div>
+                            <h2 className="text-[#101010] text-xl font-semibold text-center mt-14">{title}</h2>
+                            <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3 leading-[150%]">{description}</p>
+                            <div>
+                                <button className="w-[248px] h-14 bg-[#101010] rounded-2xl mt-8 text-[#FEFEFE] text-lg font-bold">Explore Us</button>
+                            </div>
                         </div>
-                        <h2 className="text-[#101010] text-xl font-semibold text-center mt-14">{title}</h2>
-                        <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3 leading-[150%]">{description}</p>
-                        <div>
-                            <button className="w-[248px] h-14 bg-[#101010] rounded-2xl mt-8 text-[#FEFEFE] text-lg font-bold">Explore Us</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </Link>
 
             <div>
                 <ul className="flex items-center justify-center mt-10 gap-3">

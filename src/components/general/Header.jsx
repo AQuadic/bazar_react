@@ -22,7 +22,7 @@ const Header = () => {
                     <Link to="/contact" className="text-[#101010] text-lg font-medium px-4">Contact Us</Link>
                 </div>
 
-                <div className="flex items-center gap-4 pl-12">
+                <div className="lg:flex hidden items-center gap-4 pl-12">
                     <Language />
                     <Profile />
                 </div>
