@@ -3,10 +3,10 @@ import Eye from "../icons/sign/Eye"
 import Google from "../icons/sign/Google"
 import Facebook from "../icons/sign/Facebook"
 
-const SignInForm = () => {
+const SignUpForm = () => {
     return (
         <section className="">
-            <h2 className="text-[#101010] text-5xl font-semibold leading-[150%] text-center lg:mt-0 mt-10">Sign In</h2>
+            <h2 className="text-[#101010] text-5xl font-semibold leading-[150%] text-center lg:mt-0 mt-10">Sign Up</h2>
             <p className="text-[#5D5D5D] text-xl font-medium mt-4 text-center">Sign in to continue your stylish journey.</p>
             <form className="mt-8">
                 <div className="flex flex-col">
@@ -33,16 +33,28 @@ const SignInForm = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="mt-5 flex justify-between">
-                    <div className="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-[#101010] bg-[#101010] border-[#101010] rounded-sm focus:ring-0 focus:ring-[#101010]" />
-                        <label htmlFor="default-checkbox" className="ms-2 text-base font-medium text-[#101010]">Remember me</label>
+                <div className="flex flex-col relative">
+                    <label htmlFor="password" className="text-[#101010] text-xl font-medium mt-4">Confirm Password</label>
+                    <div className="relative mt-3">
+                        <input
+                            type="password"
+                            name="confirmpassword"
+                            id="confirmpassword"
+                            className="md:w-[504px] w-full h-14 border border-[#EEEEEE] rounded-[8px] focus:outline-none px-4 pr-12"
+                            placeholder="Enter your password"
+                        />
+                        <div className="absolute inset-y-0 ltr:right-4 rtl:left-4 flex items-center cursor-pointer">
+                            <Eye />
+                        </div>
                     </div>
-                    <Link to='' className="text-[#101010] text-base underline">Forget Password</Link>
                 </div>
 
-                <button className="md:w-[504px] w-full h-14 bg-[#101010] rounded-[8px] text-[#FEFEFE] text-lg font-bold">Sign In</button>
+                <div className="flex items-center mb-4 mt-5">
+                    <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-[#101010] bg-[#101010] border-[#101010] rounded-sm focus:ring-0 focus:ring-[#101010]" />
+                    <label htmlFor="default-checkbox" className="ms-2 text-base font-medium text-[#101010]">Remember me</label>
+                </div>
+
+                <button className="md:w-[504px] w-full h-14 bg-[#101010] rounded-[8px] text-[#FEFEFE] text-lg font-bold">Sign Up</button>
 
                 <div className="mt-6 flex items-center gap-2">
                     <div className="md:w-[227px] w-full h-px bg-[#5D5D5D]"></div>
@@ -63,7 +75,7 @@ const SignInForm = () => {
 
                 <div className="mt-6 flex items-center justify-center gap-2">
                     <p className="text-[#5D5D5D] text-lg">You don’t have an account?</p>
-                    <Link to='/signup' className="text-[#101010] text-lg font-semibold underline">Sign Up</Link>
+                    <Link to='/signin' className="text-[#101010] text-lg font-semibold underline">Sign In</Link>
                 </div>
 
             </form>
@@ -71,4 +83,4 @@ const SignInForm = () => {
     )
 }
 
-export default SignInForm
+export default SignUpForm
