@@ -16,7 +16,7 @@ const OurCategories = () => {
         <section className="mt-20">
             <div className="flex items-center justify-between">
                 <h1 className="text-[#101010] md:text-[40px] text-2xl font-semibold">Our Categories</h1>
-                <Link to='/' className="text-[#101010] text-2xl font-medium">See All</Link>
+                <Link to='/categories' className="text-[#101010] text-2xl font-medium">See All</Link>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-10 mt-8">
