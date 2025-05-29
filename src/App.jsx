@@ -6,6 +6,7 @@ import Providers from "./pages/Providers";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgetPassword from "./pages/ForgetPassword";
+import ResetPassword from "./pages/ResetPassword";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="forgetPassword" element={<ForgetPassword />} />
+          <Route path="resetPassword" element={<ResetPassword />} />
         </Route>
 
       </Routes>

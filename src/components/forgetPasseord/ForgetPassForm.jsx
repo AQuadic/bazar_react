@@ -16,7 +16,7 @@ const ForgetPassForm = () => {
                         placeholder="Enter your Email" />
                 </div>
 
-                <button className="md:w-[504px] w-full h-14 bg-[#101010] rounded-[8px] text-[#FEFEFE] text-lg font-bold mt-5">Send OTP</button>
+                <button className="md:w-[504px] w-full h-14 bg-[#101010] rounded-[8px] text-[#FEFEFE] text-lg font-bold mt-6">Send OTP</button>
 
                 <div className="mt-6 text-center">
                     <p className="text-[#101010] text-base font-medium leading-[100%]">Don’t receive code?</p>
