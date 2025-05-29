@@ -18,22 +18,24 @@ const OurProviders = () => {
                 <h1 className="text-[#101010] md:text-[40px] text-2xl font-semibold">Our Providers</h1>
                 <Link to='/providers' className="text-[#101010] text-2xl font-medium">See All</Link>
             </div>
+            <Link to='/store'>
+                <div className="flex flex-wrap items-center sm:justify-between justify-center mt-8">
 
-            <div className="flex flex-wrap items-center sm:justify-between justify-center mt-8">
-                {providers.map(({ id, title, img, description }) => (
-                    <div key={id} className="flex flex-col mt-8 relative">
-                        <img src={img} alt={title} className="w-[100px] h-[100px] mx-auto" />
-                        <div className="absolute top-24 right-0">
-                            <Heart />
+                    {providers.map(({ id, title, img, description }) => (
+                        <div key={id} className="flex flex-col mt-8 relative">
+                            <img src={img} alt={title} className="w-[100px] h-[100px] mx-auto" />
+                            <div className="absolute top-24 right-0">
+                                <Heart />
+                            </div>
+                            <h2 className="text-[#101010] text-xl font-semibold text-center mt-14">{title}</h2>
+                            <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3 leading-[150%]">{description}</p>
+                            <div>
+                                <button className="w-[248px] h-14 bg-[#101010] rounded-2xl mt-8 text-[#FEFEFE] text-lg font-bold">Explore Us</button>
+                            </div>
                         </div>
-                        <h2 className="text-[#101010] text-xl font-semibold text-center mt-14">{title}</h2>
-                        <p className="w-[220px] text-[#101010] text-sm font-medium text-center mt-3 leading-[150%]">{description}</p>
-                        <div>
-                            <button className="w-[248px] h-14 bg-[#101010] rounded-2xl mt-8 text-[#FEFEFE] text-lg font-bold">Explore Us</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </Link>
         </section>
     )
 }
